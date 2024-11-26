@@ -2,7 +2,7 @@
 The code and dataset accompanying the paper *"Exploring the Lattice Thermal Conductivity Model via Interpretable Machine Learning"* will be completed and made available after the paper is accepted.
 
 $
-\log(\kappa)_{KAN} = 4.78 \cdot \Big( 
+log(\kappa)_{KAN} = 4.78 \cdot \Big( 
     0.01 \cdot \arctan(7.93 \cdot \gamma - 3.22) 
     - 0.02 \cdot \text{atanh}(1.65 \cdot F - 1.02) 
     - 1 
