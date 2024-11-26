@@ -1,6 +1,7 @@
 # LTC_modeling
 The code and dataset accompanying the paper *"Exploring the Lattice Thermal Conductivity Model via Interpretable Machine Learning"* will be completed and made available after the paper is accepted.
 
+$
 \[
 \log(\kappa)_{KAN} = 4.78 \cdot \Big( 
     0.01 \cdot \arctan(7.93 \cdot \gamma - 3.22) 
@@ -70,4 +71,5 @@ The code and dataset accompanying the paper *"Exploring the Lattice Thermal Cond
 \Big) 
 - \dots
 \]
-
+$
+$
