@@ -1,6 +1,73 @@
 # LTC_modeling
 The code and dataset accompanying the paper *"Exploring the Lattice Thermal Conductivity Model via Interpretable Machine Learning"* will be completed and made available after the paper is accepted.
 
-$
-log(\kappa)_{KAN}=4.78*(0.01*atan(7.93*\gamma - 3.22) - 0.02*atanh(1.65*F - 1.02) - 1 + 0.05*exp(-100.0*(-\Theta - 0.04)**2) - 0.03*exp(-92.16*(-C_v - 0.06)**2) - 0.02*exp(-40.96*(-C_p - 0.06)**2) + 0.02*exp(-2.9*(0.22 - K_{i})**2) - 0.02*exp(-38.44*(0.07 - S_v)**2) - 0.04*exp(-60.69*\alpha**2))**4 - 0.16*tanh(-0.26*sin(5.58*SG + 6.4) + 0.53*tan(1.34*F - 9.54) + 0.69*tanh(7.9*C_p - 2.41) + 0.5*tanh(10.0*C_v - 3.2) + 0.32*Abs(9.94*S_v - 0.82) + 0.86*atan(4.61*K_{s} - 1.72) + 0.29 - 81.47*exp(-100.0*(-\alpha - 0.16)**2) + 2.09*exp(-100.0*(-\Theta - 0.08)**2) + 0.17*exp(-100.0*(0.54 - \gamma)**2) - 1.45*exp(-14.44*(0.12 - K_{i})**2)) - 0.08*tanh(2.45*tan(1.08*F - 0.8) + 1.27*tan(1.77*K_{i} - 0.76) + 0.95*tan(1.87*K_{s} - 0.84) + 0.78*tan(1.77*S_v + 2.4) + 0.03*tan(3.17*\Theta + 1.57) + 0.37*tanh(4.25*SG - 2.9) - 1.15 - 0.66*exp(-43.72*(0.27 - \gamma)**2) - 0.32*exp(-100.0*(0.24 - \alpha)**2) + 0.67*exp(-100.0*(0.02 - C_p)**2) + 0.72*exp(-100.0*C_v**2)) - 0.07*Abs(0.22*sin(10.0*\gamma + 1.0) - 0.75*tan(2.34*K_{s} - 0.97) + 0.34*tanh(10.0*F - 4.9) - 0.34*atan(10.0*\Theta - 0.6) + 0.37*atanh(2.6*C_p - 0.95) + 1.52 - 0.27*exp(-8.1*(0.41 - SG)**2) + 0.42*exp(-49.0*(0.2 - S_v)**2) - 0.92*exp(-100.0*(0.14 - \alpha)**2) + 0.42*exp(-100.0*(0.13 - K_{i})**2) - 0.93*exp(-81.0*(0.07 - C_v)**2)) - 4.57 - 0.21*exp(-1.86*(-0.03*tan(3.11*K_{s} - 7.81) - 0.02*tan(3.4*SG + 4.4) - 0.14*tan(4.26*\alpha + 7.97) - 0.12*Abs(7.59*\Theta - 1.03) - 0.18*atan(7.53*\gamma - 4.87) + 0.16*atanh(2.0*F - 1.08) - 0.08 + exp(-2.56*(-K_{i} - 0.03)**2) + 0.28*exp(-88.36*(0.09 - S_v)**2) - 0.16*exp(-100.0*(0.04 - C_v)**2) - 0.23*exp(-100.0*(0.04 - C_p)**2))**2) - 0.53*exp(-12.72*(0.04*sin(5.04*SG + 2.18) + 0.11*tan(2.64*K_{s} + 4.81) - 0.08*tan(2.77*\Theta - 4.58) + 0.32*tanh(9.0*\alpha - 0.44) - 0.1*tanh(10.0*\gamma - 6.6) - 0.34*atan(2.52*F - 1.63) + 0.15*atan(9.0*S_v - 1.56) + 0.04*sign(2.64 - 10.0*C_p) - 1 - 0.43*exp(-21.25*(-K_{i} - 0.1)**2) + 0.11*exp(-81.0*(0.15 - C_v)**2))**2) + 0.04*exp(-10.71*(0.17*sin(6.2*C_p - 0.15) + 0.12*atan(5.2*S_v - 3.27) + 0.04*sign(4.06 - 9.4*\gamma) + 0.03*sign(9.0 - 10.0*SG) - 1 + 0.97*exp(-96.04*(-\alpha - 0.07)**2) - 0.65*exp(-100.0*(-C_v - 0.06)**2) - 0.41*exp(-11.5*(0.95 - \Theta)**2) - 0.21*exp(-5.76*(0.38 - F)**2) + 0.44*exp(-3.24*(0.14 - K_{s})**2) + 0.62*exp(-1.96*(0.05 - K_{i})**2))**2)
-$
+\[
+\log(\kappa)_{KAN} = 4.78 \cdot \Big( 
+    0.01 \cdot \arctan(7.93 \cdot \gamma - 3.22) 
+    - 0.02 \cdot \text{atanh}(1.65 \cdot F - 1.02) 
+    - 1 
+    + 0.05 \cdot \exp(-100.0 \cdot (-\Theta - 0.04)^2) 
+    - 0.03 \cdot \exp(-92.16 \cdot (-C_v - 0.06)^2) 
+    - 0.02 \cdot \exp(-40.96 \cdot (-C_p - 0.06)^2) 
+    + 0.02 \cdot \exp(-2.9 \cdot (0.22 - K_i)^2) 
+    - 0.02 \cdot \exp(-38.44 \cdot (0.07 - S_v)^2) 
+    - 0.04 \cdot \exp(-60.69 \cdot \alpha^2) 
+\Big)^4 
+- 0.16 \cdot \tanh\Big( 
+    -0.26 \cdot \sin(5.58 \cdot SG + 6.4) 
+    + 0.53 \cdot \tan(1.34 \cdot F - 9.54) 
+    + 0.69 \cdot \tanh(7.9 \cdot C_p - 2.41) 
+    + 0.5 \cdot \tanh(10.0 \cdot C_v - 3.2) 
+    + 0.32 \cdot |9.94 \cdot S_v - 0.82| 
+    + 0.86 \cdot \arctan(4.61 \cdot K_s - 1.72) 
+    + 0.29 
+    - 81.47 \cdot \exp(-100.0 \cdot (-\alpha - 0.16)^2) 
+    + 2.09 \cdot \exp(-100.0 \cdot (-\Theta - 0.08)^2) 
+    + 0.17 \cdot \exp(-100.0 \cdot (0.54 - \gamma)^2) 
+    - 1.45 \cdot \exp(-14.44 \cdot (0.12 - K_i)^2) 
+\Big) 
+- 0.08 \cdot \tanh\Big( 
+    2.45 \cdot \tan(1.08 \cdot F - 0.8) 
+    + 1.27 \cdot \tan(1.77 \cdot K_i - 0.76) 
+    + 0.95 \cdot \tan(1.87 \cdot K_s - 0.84) 
+    + 0.78 \cdot \tan(1.77 \cdot S_v + 2.4) 
+    + 0.03 \cdot \tan(3.17 \cdot \Theta + 1.57) 
+    + 0.37 \cdot \tanh(4.25 \cdot SG - 2.9) 
+    - 1.15 
+    - 0.66 \cdot \exp(-43.72 \cdot (0.27 - \gamma)^2) 
+    - 0.32 \cdot \exp(-100.0 \cdot (0.24 - \alpha)^2) 
+    + 0.67 \cdot \exp(-100.0 \cdot (0.02 - C_p)^2) 
+    + 0.72 \cdot \exp(-100.0 \cdot C_v^2) 
+\Big) 
+- 0.07 \cdot \Big| 
+    0.22 \cdot \sin(10.0 \cdot \gamma + 1.0) 
+    - 0.75 \cdot \tan(2.34 \cdot K_s - 0.97) 
+    + 0.34 \cdot \tanh(10.0 \cdot F - 4.9) 
+    - 0.34 \cdot \arctan(10.0 \cdot \Theta - 0.6) 
+    + 0.37 \cdot \text{atanh}(2.6 \cdot C_p - 0.95) 
+    + 1.52 
+    - 0.27 \cdot \exp(-8.1 \cdot (0.41 - SG)^2) 
+    + 0.42 \cdot \exp(-49.0 \cdot (0.2 - S_v)^2) 
+    - 0.92 \cdot \exp(-100.0 \cdot (0.14 - \alpha)^2) 
+    + 0.42 \cdot \exp(-100.0 \cdot (0.13 - K_i)^2) 
+    - 0.93 \cdot \exp(-81.0 \cdot (0.07 - C_v)^2) 
+\Big| 
+- 4.57 
+- 0.21 \cdot \exp\Big( 
+    -1.86 \cdot \Big(
+        -0.03 \cdot \tan(3.11 \cdot K_s - 7.81) 
+        - 0.02 \cdot \tan(3.4 \cdot SG + 4.4) 
+        - 0.14 \cdot \tan(4.26 \cdot \alpha + 7.97) 
+        - 0.12 \cdot |7.59 \cdot \Theta - 1.03| 
+        - 0.18 \cdot \arctan(7.53 \cdot \gamma - 4.87) 
+        + 0.16 \cdot \text{atanh}(2.0 \cdot F - 1.08) 
+        - 0.08 
+        + \exp(-2.56 \cdot (-K_i - 0.03)^2) 
+        + 0.28 \cdot \exp(-88.36 \cdot (0.09 - S_v)^2) 
+        - 0.16 \cdot \exp(-100.0 \cdot (0.04 - C_v)^2) 
+        - 0.23 \cdot \exp(-100.0 \cdot (0.04 - C_p)^2) 
+    \Big)^2
+\Big) 
+- \dots
+\]
+
