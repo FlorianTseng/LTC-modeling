@@ -2,5 +2,9 @@
 The code and dataset accompanying the paper *"Accelerating the Exploration of Thermal Materials via a Synergistic Strategy of DFT and Interpretable Deep Learning
 "* will be completed and made available after the paper is accepted.
 
-## December 8, 2024
+## Dec 8, 2024
 Preprint article is availabel at https://arxiv.org/abs/2412.05948.
+
+## Sep 22, 2025
+
+Published article is openly available at https://www.materialsfutures.org/article/doi/10.1088/2752-5724/ae08d0.
