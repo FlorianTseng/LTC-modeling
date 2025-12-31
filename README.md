@@ -20,5 +20,5 @@ number = {4},
 pages = {045602},
 author = {Zeng, Yuxuan and Cao, Wei and Zuo, Yijing and Peng, Tan and Hou, Yue and Miao, Ling and Wang, Ziyu and Shi, Jing},
 title = {Accelerating the discovery of materials with expected thermal conductivity via a synergistic strategy of DFT and interpretable deep learning},
-journal = {Materials Futures},
+journal = {Materials Futures}
 ```
