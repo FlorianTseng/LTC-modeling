@@ -1,4 +1,4 @@
-# Accelerating the Discovery of Materials with Expected Thermal Conductivity via a Synergistic Strategy of DFT and Interpretable Deep Learning"
+# Accelerating the Discovery of Materials with Expected Thermal Conductivity via a Synergistic Strategy of DFT and Interpretable Deep Learning
 
 ## Dec 8, 2024
 Preprint version is availabel on [arXiv](https://arxiv.org/abs/2412.05948).
